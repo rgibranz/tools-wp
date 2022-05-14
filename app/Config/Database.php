@@ -50,6 +50,26 @@ class Database extends Config
         'port'     => 3306,
     ];
 
+    public $slsuniv = [
+        'DSN'      => '',
+        'hostname' => '151.106.119.126',
+        'username' => 'korpora2018_slsuniv',
+        'password' => '6@p9Sa@7E4',
+        'database' => 'korpora2018_slsuniv',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => 'wpkv_',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
     /**
      * This database connection is used when
      * running PHPUnit database tests.

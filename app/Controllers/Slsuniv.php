@@ -11,17 +11,13 @@ class Slsuniv extends BaseController
 
     public function __construct()
     {
-        $this->slsuniv = Database::connect('slsuniv');
+        $this->slsuniv = new \App\Models\Slsuniv\Posts();
     }
 
     public function CourseEnrollment()
     {
 
-        $course = $this->slsuniv->table('wpkv_posts')
-            ->select('ID,post_title')
-            ->where('post_type', 'sfwd-courses')
-            ->where('post_status', 'publish')
-            ->get();
-        var_dump($course->getResult());
+        $course = $this->slsuniv->where('post_type', 'sfwd-courses')->where('post_status', 'publish')->findAll();
+        var_dump($course);
     }
 }
