@@ -17,6 +17,11 @@ class Slsuniv extends BaseController
     public function CourseEnrollment()
     {
         $course = $this->slsuniv->where('post_type', 'sfwd-courses')->where('post_status', 'publish')->findAll();
-        var_dump($course);
+        return view('slsuniv/CourseEnrollment', ['course' => $course]);
+    }
+
+    public function ExportCourseEnrollment()
+    {
+        var_dump($_POST);
     }
 }
