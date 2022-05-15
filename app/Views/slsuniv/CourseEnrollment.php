@@ -2,21 +2,13 @@
 
 <?= $this->section('content') ?>
 
-<div class="container-fluid">
+<div class="container mt-5">
 
     <!-- SELECT2 EXAMPLE -->
     <div class="card card-default">
         <div class="card-header">
             <h3 class="card-title">Export Course Enrollement</h3>
 
-            <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -24,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <select class="form-control select2bs4" style="width: 100%;" name="post_id">
+                            <select class="form-control select2" style="width: 100%;" name="post_id">
                                 <?php foreach ($course as $data) : ?>
                                     <option value="<?= $data['ID'] ?>"><?= $data['post_title'] ?></option>
                                 <?php endforeach ?>
