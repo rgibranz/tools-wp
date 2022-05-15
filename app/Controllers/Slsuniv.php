@@ -61,10 +61,10 @@ class Slsuniv extends BaseController
         }
 
 
-        $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($spreadsheet);
+        $writer = new \PhpOffice\PhpSpreadsheet\Writer\Csv($spreadsheet);
 
         $writer->save('php://output');
         $this->response->setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        $this->response->setHeader('Content-Disposition', 'attachment; filename="User Terenrol Kelas ' . $course['post_title'] . '.xlsx"');
+        $this->response->setHeader('Content-Disposition', 'attachment; filename="User Terenrol Kelas ' . $course['post_title'] . '.csv"');
     }
 }
