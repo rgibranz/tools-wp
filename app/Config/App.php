@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://tuls.korporaconsulting.com/';
+    public $baseURL = 'http://tuls.korporaconsulting.com/';
 
     /**
      * --------------------------------------------------------------------------
