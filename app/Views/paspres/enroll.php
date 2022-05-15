@@ -12,7 +12,7 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <form action="<?= site_url('paspres/dienroll') ?>" method="POST">
+            <form action="<?= site_url('paspres/dienroll') ?>" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -21,6 +21,11 @@
                                     <option value="<?= $data['ID'] ?>"><?= $data['post_title'] ?></option>
                                 <?php endforeach ?>
                             </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="file" name="file" id="" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-2">
