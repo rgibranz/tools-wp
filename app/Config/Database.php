@@ -90,6 +90,47 @@ class Database extends Config
         'port'     => 3306,
     ];
 
+    public $paspres = [
+        'DSN'      => '',
+        'hostname' => '151.106.119.126',
+        'username' => 'korpora2018_ppdb',
+        'password' => '-M7Fp]y6S2',
+        'database' => 'korpora2018_ppdb',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
+    public $peem = [
+        'DSN'      => '',
+        'hostname' => '151.106.119.126',
+        'username' => 'korpora2018_wp917',
+        'password' => 'pS42(@8uRt',
+        'database' => 'korpora2018_wp917',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => 'wp48_',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
+
     /**
      * This database connection is used when
      * running PHPUnit database tests.

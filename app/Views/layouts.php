@@ -26,6 +26,9 @@
                     <a class="nav-link" href="<?= site_url() ?>/slsuniv/courseenrollment">Course Enrollement SU</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="<?= site_url() ?>/peem/courseenrollment">Course Enrollement pm</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="<?= site_url() ?>/paspres/enroll">Enroll PP</a>
                 </li>
             </ul>

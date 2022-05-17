@@ -12,7 +12,7 @@ class Paspres extends BaseController
     private $usermeta;
     public function __construct()
     {
-        $this->db       = \Config\Database::connect('paspreslocal');
+        $this->db       = \Config\Database::connect('paspres');
         $this->posts    = $this->db->table('posts');
         $this->users    = $this->db->table('users');
         $this->usermeta = $this->db->table('usermeta');
